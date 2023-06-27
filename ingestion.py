@@ -7,7 +7,7 @@ from langchain.vectorstores import Pinecone
 
 def ingest_docs():
     loader = ReadTheDocsLoader(
-        path="langchain-docs/langchain.readthedocs.io/en/latest/"
+        path="langchain-docs/"
     )
     raw_documents = loader.load()
     print(f"loaded {len(raw_documents)} documents")
